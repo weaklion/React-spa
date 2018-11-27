@@ -13,7 +13,7 @@ class App extends Component{
             <Route  path="/News" component={News}/>
             <Route  path="/Discography" component={Discography}/>
             <Route path="/auth" component={Auth}/>
-            <Route component={NotFoundPage}/>
+            
         </Switch>   
         </div>
         );
