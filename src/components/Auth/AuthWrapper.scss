@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
+.page{
+    font-family: 'Shadows Into Light', cursive; 
+    height:100vh;
+     background:rgba(0,0,0,1);
+    width: 60rem;
+    max-width:1400px;
+    color: white;
+    margin: 0 auto;
+    box-sizing: border-box;
+    transition: .4s all;
+    user-select: none;
+    .Positioner{
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width:38rem;
+    .Contents{
+        
+    padding: 2rem;
+    height: auto;
+    }
+    }
+}

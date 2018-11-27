@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
+
+
+     .news-box{
+         color:white;
+         padding-right: 20px;
+         text-align: center;
+         padding-left: 20px;
+         
+         width: 50%;
+         margin:0 auto;
+        background: black;
+        display:grid;
+        grid-template-columns: repeat(1,1fr);
+        overflow: auto;
+     
+        .news{
+            font-family: 'Shadows Into Light', cursive;
+            font-size: 24px;
+            text-align: center;
+            font-weight: 400;
+         }
+         .news_object{
+         
+            margin:0 auto;
+             color: white;
+           padding-right: 10px;
+           padding-left: 10px;
+        
+          
+             .news_title{
+                font-weight:300;
+                font-size: 21px;
+             }
+             .news_thumbnail{
+                    text-align: center;
+
+                margin:0 auto;
+                 max-width: 550px;
+                 max-height: 550px;
+                 .news_image{
+                   
+                  
+                    max-width: 550px;
+                   max-height: 550px;
+                   min-width: 150px;
+                   min-height: 150px;
+                 }
+                 .news_content{
+                    
+                    text-align: left;
+                 }
+             }
+         }
+     }

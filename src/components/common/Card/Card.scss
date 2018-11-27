@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
+
+.open{
+   
+     margin:0;
+     cursor: pointer;
+    display: inline-block;
+    cursor: pointer;
+    .bar1,.bar2,.bar3{
+        width:35px;
+        height:5px;
+        background-color: white;
+        margin: 6px 0;
+        transition: 0.4s;
+      
+    }    
+    
+}
+.close{
+    display: inline-block;
+    cursor: pointer;
+    .bar1,.bar2,.bar3{
+        width:35px;
+        height:5px;
+        background-color: white;
+        margin: 6px 0;
+        transition: 0.4s;
+       
+    }    
+    .bar1{
+    -webkit-transform: rotate(-45deg)
+    translate(-9px,6px);
+    transform:rotate(-45deg)
+    translate(-9px,6px);
+    }
+    .bar2{
+        opacity:0;
+    }
+    .bar3{
+        -webkit-transform: rotate(45deg)
+    translate(-8px,-8px);
+    transform:rotate(45deg)
+    translate(-8px,-8px);
+    }
+}
+.menu{
+.submenu{
+ 
+    padding: 5px;
+    li{
+        font-family: 'Shadows Into Light', cursive;
+        color:rgb(255, 255, 255);
+        font-weight: 600;
+        font-size: 23px;
+    padding: 5px 0px 5px 5px;
+    margin-bottom: 5px;
+    list-style:none;
+        &:hover{
+            color:rgb(224, 219, 219);
+        }
+    }
+    
+}
+}
