@@ -17,7 +17,6 @@
     "case-sensitive-paths-webpack-plugin": "2.1.2",
     "chalk": "2.4.1",
     "classnames": "^2.2.6",
-    "concurrently": "^4.1.0",
     "css-loader": "1.0.0",
     "dotenv": "^6.0.0",
     "dotenv-expand": "4.2.0",
@@ -140,5 +139,7 @@
   "main": "index.js",
   "license": "MIT",
   "proxy": "http://localhost:5000",
-  "devDependencies": {}
+  "devDependencies": {
+    "concurrently": "^4.1.0"
+  }
 }
