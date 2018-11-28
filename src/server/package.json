@@ -17,5 +17,8 @@
   "scripts": {
     "start": "cross-env NODE_PATH=src node src",
     "start:dev": "cross-env NODE_PATH=src nodemon --watch src/ src/index.js"
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.0"
   }
 }
