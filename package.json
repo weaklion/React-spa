@@ -139,7 +139,7 @@
   },
   "main": "index.js",
   "license": "MIT",
-  "proxy": "https:/localhost:5000/",
+ 
   "devDependencies": {
     "concurrently": "^4.1.0"
   }
