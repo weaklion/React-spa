@@ -21,7 +21,7 @@ mongoose.connect(process.env.MONGO_URI, {useNewUrlParser: true}).then(
     console.error(e);
 });
 
-const port = process.env.PORT || 5000; // PORT 값이 설정되어있지 않다면 5000 을 사용합니다.
+const port = process.env.PORT || 4000; // PORT 값이 설정되어있지 않다면 5000 을 사용합니다.
 
 app.use(bodyParser()); // 바디파서 적용, 라우터 적용코드보다 상단에 있어야합니다.
 app.use(jwtMiddleware);//디코더 적용
@@ -30,5 +30,5 @@ app.use(router.routes()).use(router.allowedMethods());
 
 
 app.listen(port, () => {
-    console.log('server is listening to port ' + port);
+    console.log('server is listening to port ',this.address().port, app.settings.env);
 });
