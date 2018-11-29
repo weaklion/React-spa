@@ -139,7 +139,7 @@
   },
   "main": "index.js",
   "license": "MIT",
-  "proxy": "https://weaklionsiaspa.herokuapp.com:5000",
+  "proxy": "https://weaklionsiaspa.herokuapp.com",
   "devDependencies": {
     "concurrently": "^4.1.0"
   }
