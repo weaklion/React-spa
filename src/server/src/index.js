@@ -26,6 +26,7 @@ const port = process.env.PORT || 5000; // PORT 값이 설정되어있지 않다�
 
 app.use(bodyParser()); // 바디파서 적용, 라우터 적용코드보다 상단에 있어야합니다.
 app.use(jwtMiddleware);//디코더 적용
+app.use('/api', proxy({ target: 'http://localhost:5000', changeOrigin: true }))
 router.use('/api', api.routes()); // api 라우트를 /api 경로 하위 라우트로 설정
 app.use(router.routes()).use(router.allowedMethods());
 
