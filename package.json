@@ -141,5 +141,6 @@
   "license": "MIT",
   "devDependencies": {
     "concurrently": "^4.1.0"
-  }
+  },
+  "proxy": "https://weaklionsiaspa.herokuapp.com:5000"
 }
