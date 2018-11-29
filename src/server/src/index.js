@@ -3,6 +3,7 @@ require('dotenv').config(); // .env 파일에서 환경변수 불러오기
 const { jwtMiddleware } = require('../src/lib/token');
 const Koa = require('koa');
 const Router = require('koa-router');
+const proxy = require('http-proxy-middleware');
 
 const app = new Koa();
 const router = new Router();
@@ -27,7 +28,7 @@ app.use(bodyParser()); // 바디파서 적용, 라우터 적용코드보다 상�
 app.use(jwtMiddleware);//디코더 적용
 router.use('/api', api.routes()); // api 라우트를 /api 경로 하위 라우트로 설정
 app.use(router.routes()).use(router.allowedMethods());
-
+app.use('/api', proxy({ target: 'https://weaklionsiaspa.herokuapp.com:5000',changeOrigin:true }))
 
 app.listen(port, () => {
     console.log('server is listening to port ' + port);
