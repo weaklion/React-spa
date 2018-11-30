@@ -1,14 +1,7 @@
 import React, { Component } from 'react';
 import styles from './Newscontent.scss';
 import classNames from 'classnames/bind';
-import christmas from '../../image/album/SIA_Everyday-is-christmas.jpg';
-import acting from '../../image/album/sia-this-is-acting.jpg';
-import fear from '../../image/album/sia-1000-forms-of-fear.jpg';
-import born from '../../image/album/we-are-born.jpg';
-import people from '../../image/album/Sia_Some-People-Have-Real-Problems.jpg';
-import colour from '../../image/album/Sia_Colour-The-Small-One.jpg';
-import healing from '../../image/album/Sia_Healing-Is-Difficult.jpg';
-import onlysee from '../../image/album/Sia_Only-See.jpg';
+import NewsBox from './NewsBox';
 
 const cx = classNames.bind(styles);
 
@@ -17,25 +10,16 @@ class Newscontent extends Component {
 constructor(props){
   super(props);
   this.state = {
-    items: 4,
+    items: 1,
     loadingState : false
   };
 }
 displayItems(){
   var items=[] ;
   for(var i=0;i< this.state.items; i++){
-    items.push( <article className={cx('news_object')} key={i}>
-    <div className={cx('news_title')}><h5>'Everyday Is Christmas' + 3 New Songs - Out Today!</h5></div>
-    <div className={cx('news_thumbnail')}>
-    <img src={christmas} className={cx('news_image')} alt="news_image"></img>
-    </div>
-    <div className={cx('news_content')}>
-    The most wonderful time of the year is coming! To make your holiday <br/>extra special Everyday Is Christmas is out today with three new bonus tracks, 
-    <br/>including "Sing For My Life," "My Old Santa Claus,"<br></br>  a cover of Perry Como's "Round and Round." 
-    <br/>Stream/download in all your fave places or head to Target to get the exclusive CD for someone on your nice list. - Team Sia
-    </div>
-    <div className={cx('news_detail')}> </div>
-    </article>);
+    items.push( <NewsBox key={i}>
+    
+    </NewsBox>);
   }
   return items;
 };

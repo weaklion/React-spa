@@ -13,11 +13,7 @@ const host = process.env.HOST || '0.0.0.0';
 
 module.exports = function(proxy, allowedHost) {
   return {
-<<<<<<< HEAD
     // Webpack 2.4.3 introduced a security fix that prevents remote
-=======
-    // WebpackDevServer 2.4.3 introduced a security fix that prevents remote
->>>>>>> 6e9146a8a924719343d0f4451e25c82f7280dbc5
     // websites from potentially accessing local content through DNS rebinding:
     // https://github.com/webpack/webpack-dev-server/issues/887
     // https://medium.com/webpack/webpack-dev-server-middleware-security-issues-1489d950874a
@@ -37,10 +33,7 @@ module.exports = function(proxy, allowedHost) {
       !proxy || process.env.DANGEROUSLY_DISABLE_HOST_CHECK === 'true',
     // Enable gzip compression of generated files.
     compress: true,
-<<<<<<< HEAD
   
-=======
->>>>>>> 6e9146a8a924719343d0f4451e25c82f7280dbc5
     // Silence WebpackDevServer's own logs since they're generally not useful.
     // It will still show compile warnings and errors with this setting.
     clientLogLevel: 'none',

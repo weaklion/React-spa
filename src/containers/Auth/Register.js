@@ -177,10 +177,6 @@ export default connect(
     }),
     (dispatch) => ({
         AuthActions: bindActionCreators(authActions, dispatch),
-<<<<<<< HEAD
         UserActions :bindActionCreators(userActions,dispatch)
-=======
-        UserActions : bindActionCreators(userActions,dispatch)
->>>>>>> 6e9146a8a924719343d0f4451e25c82f7280dbc5
     })
 )(Register);

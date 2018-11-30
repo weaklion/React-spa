@@ -3,10 +3,7 @@ require('dotenv').config(); // .env 파일에서 환경변수 불러오기
 const { jwtMiddleware } = require('../src/lib/token');
 const Koa = require('koa');
 const Router = require('koa-router');
-<<<<<<< HEAD
-=======
 
->>>>>>> 6e9146a8a924719343d0f4451e25c82f7280dbc5
 const app = new Koa();
 const router = new Router();
 const api = require('./api');
@@ -24,21 +21,14 @@ mongoose.connect(process.env.MONGO_URI, {useNewUrlParser: true}).then(
     console.error(e);
 });
 
-<<<<<<< HEAD
-const port = process.env.PORT || 5000; // PORT 값이 설정되어있지 않다면 5000 을 사용합니다.
-=======
-const port = process.env.PORT || 4000; // PORT 값이 설정되어있지 않다면 4000 을 사용합니다.
->>>>>>> 6e9146a8a924719343d0f4451e25c82f7280dbc5
+const port = process.env.PORT || 5000; // PORT 값이 설정되어있지 않다면 4000 을 사용합니다.
 
 app.use(bodyParser()); // 바디파서 적용, 라우터 적용코드보다 상단에 있어야합니다.
 app.use(jwtMiddleware);//디코더 적용
 router.use('/api', api.routes()); // api 라우트를 /api 경로 하위 라우트로 설정
 app.use(router.routes()).use(router.allowedMethods());
-<<<<<<< HEAD
-=======
 
 
->>>>>>> 6e9146a8a924719343d0f4451e25c82f7280dbc5
 app.listen(port, () => {
     console.log('server is listening to port ' + port);
 });
