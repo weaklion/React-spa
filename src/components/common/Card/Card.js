@@ -91,7 +91,11 @@ _isMounted=false;
     <li> { user.get('logged') ? <div onClick={this.handleLogout}>Logout</div> 
     :  <Link to='/Auth/Login/local'>Login</Link>}</li>
     <li><a href='https://en.wikipedia.org/wiki/Sia_(musician)'>About</a></li>
+<<<<<<< HEAD
    <li>{ user.get('logged')?  <Link to='/News'>News</Link> : <Link to='/Auth/Login/local'>News</Link> } </li>
+=======
+   <li> { user.get('logged') ? <Link to='/News'>News</Link> : <Link to='/Auth/Login/local'>News</Link> } </li>
+>>>>>>> 6e9146a8a924719343d0f4451e25c82f7280dbc5
     <li><Link to='/Discography'>Discography</Link></li>
     <li><SNS/></li>
  

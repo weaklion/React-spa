@@ -3,15 +3,21 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+<<<<<<< HEAD
   "engines": {
     "node": "8.11.4",
     "npm": "6.4.1"
   },
+=======
+>>>>>>> 6e9146a8a924719343d0f4451e25c82f7280dbc5
   "dependencies": {
     "body-parser": "^1.18.3",
     "cross-env": "^5.2.0",
     "dotenv": "^6.1.0",
+<<<<<<< HEAD
     "http-proxy-middleware": "^0.19.1",
+=======
+>>>>>>> 6e9146a8a924719343d0f4451e25c82f7280dbc5
     "joi": "^14.0.6",
     "jsonwebtoken": "^8.3.0",
     "koa": "^2.6.2",
@@ -22,10 +28,14 @@
   "scripts": {
     "start": "cross-env NODE_PATH=src node src",
     "start:dev": "cross-env NODE_PATH=src nodemon --watch src/ src/index.js"
+<<<<<<< HEAD
   },
   "devDependencies": {
     "concurrently": "^4.1.0"
   },
   "author": "",
   "description": ""
+=======
+  }
+>>>>>>> 6e9146a8a924719343d0f4451e25c82f7280dbc5
 }
