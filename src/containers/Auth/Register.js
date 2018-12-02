@@ -6,7 +6,7 @@ import {bindActionCreators } from 'redux';
 import * as authActions from '../../redux/modules/auth';
 import * as userActions from '../../redux/modules/user';
 import {isEmail, isLength, isAlphanumeric } from 'validator';
-import storage from 'lib/storage';
+import storage from '../../lib/storage';
 
 class Register extends Component {
     componentWillUnmount() {

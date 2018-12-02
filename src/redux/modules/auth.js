@@ -1,6 +1,6 @@
 import { createAction, handleActions } from 'redux-actions';
 import { pender} from 'redux-pender';
-import * as AuthAPI from 'lib/auth';
+import * as AuthAPI from '../../lib/auth';
 import { Map } from 'immutable';
 
 //액션 타입정의

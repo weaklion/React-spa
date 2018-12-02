@@ -1,6 +1,6 @@
 import { createAction, handleActions } from 'redux-actions';
 import { Map } from 'immutable';
-import * as AuthAPI from 'lib/auth';
+import * as AuthAPI from '../../lib/auth';
 import { pender } from 'redux-pender';
 
 const SET_LOGGED_INFO = 'user/SET_LOGGED_INFO'; //로그인 정보 설정
