@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import {bindActionCreators} from 'redux';
 import * as userActions from '../../redux/modules/user';
 import * as authActions from '../../redux/modules/auth';
-import storage from 'lib/storage';
+import storage from '../../lib/storage';
 
 
 class Login extends Component {

@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import styles from './Card.scss';
 import classNames from 'classnames/bind';
 import { Link } from 'react-router-dom';
-import storage from 'lib/storage';
+import storage from '../../../lib/storage';
 import { connect } from 'react-redux';
 import {bindActionCreators} from 'redux';
-import * as userActions from 'redux/modules/user';
+import * as userActions from '../../../redux/modules/user';
 import SNS from './SNS';
 
 const cx = classNames.bind(styles);

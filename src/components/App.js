@@ -1,6 +1,6 @@
 import React, { Component} from 'react';
 import { Switch, Route} from 'react-router-dom';
-import { Auth,News,Discography,MainPage,NotFoundPage  } from 'pages';
+import { Auth,News,Discography,MainPage,NotFoundPage  } from '../pages';
 import axios from 'axios';
 
 class App extends Component{

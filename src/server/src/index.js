@@ -13,7 +13,7 @@ const bodyParser = require('koa-bodyparser');
 
 mongoose.Promise = global.Promise; // Node 의 네이티브 Promise 사용
 // mongodb 연결
-mongoose.connect(process.env.MONGO_URI, {useNewUrlParser: true}).then(
+mongoose.connect("mongodb://userlist:123456789q@ds159073.mlab.com:59073/database1", {useNewUrlParser: true}).then(
     (response) => {
         console.log('Successfully connected to mongodb');
     }

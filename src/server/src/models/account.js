@@ -4,7 +4,7 @@ const crypto = require('crypto');
 const { generateToken } = require('lib/token');
 
 function hash(password){
-    return crypto.createHmac('sha256',process.env.SECRET_KEY).update(password)
+    return crypto.createHmac('sha256',"MySecretKey1$1$234").update(password)
     .digest('hex');
 }
 

@@ -1,4 +1,4 @@
-const jwtSecret = process.env.JWT_SECRET;
+const jwtSecret = "USER_JSON_WEB_TOKEN_KEY_!@#$";
 const jwt = require('jsonwebtoken');
 //토큰생성
 //@params {any } payload
