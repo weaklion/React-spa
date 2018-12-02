@@ -1,0 +1,49 @@
+@import '../../../styles/utils.scss';
+@import url('https://fonts.googleapis.com/css?family=Roboto:500i');
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
+@import '../../../styles/Mixin.scss';
+.header {
+    
+    .header-content{
+        z-index: 2;
+        position: fixed;
+        width:80rem;
+        padding-left: 5.9rem;
+        padding-top: 1.7rem;
+        @include animation(0,1.2s, fadein,ease);
+       
+    display:flex;
+   align-content: flex-start;
+        .logo{
+            transition: 0.2s ease-in;
+            &:hover{
+                opacity: 0.8;
+            }
+            font-family: 'Shadows Into Light', cursive;
+            color: white;
+            font-weight: 600;
+            font-size: 4rem;
+            width: 6rem;
+            height: 6rem;
+            margin:0;
+            -ms-user-select: none; 
+          
+            -webkit-user-select: none; 
+            -khtml-user-select: none;
+             user-select:none;
+            
+        }
+        .menubar{
+           position: fixed;
+           right: 12rem;
+           top: 3.5rem;
+         
+            width:3.8rem;
+            height:3.2rem;
+            margin:0;
+            cursor: pointer;
+          
+        }
+   
+}
+}

@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
+
+.fake-box{
+   height:100%;
+    padding-right: 20px;
+    padding-left : 70px;
+    background:black;
+        opacity: 0.8;
+    width:60%;
+    color: black;
+    margin: 0 auto;
+    box-sizing: border-box;
+ 
+  /* unnecessary styling properties */
+
+
+.Content-box{
+   font-size: 24px;
+  display: grid;
+  grid-gap:2px;
+  grid-template-columns: repeat(2,45%);
+  grid-template-rows: 160px 340px;
+  grid-auto-rows:350px;
+  grid-auto-columns: 300px;
+  .Content-title{
+    font-family: 'Shadows Into Light', cursive;
+    color:white;
+    font-size: 24px;
+    text-align: center;
+    font-weight: 400;
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
+  
+      .Content-album{
+         padding-right:6rem;      
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+      .album-cover{
+      
+        opacity: 0.6;
+        width:300px;
+        height:300px;
+        margin-bottom: 10px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        transition: 0.25s ease-in;
+        &:hover{
+          opacity:1;
+        }
+      }
+      .SNS_ul{
+        list-style: none;
+        margin:0;
+        padding:0;
+        display:flex;
+        
+      .SNS_image{
+        width:20px;
+        height:20px;
+        margin-right:10px;
+        transition: 0.25s ease-in;
+        opacity: 0.6;
+        &:hover{
+            opacity:1;
+        }
+      }
+    }
+    }
+}
+}
