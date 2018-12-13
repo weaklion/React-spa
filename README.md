@@ -14,6 +14,6 @@ frontend technologies used in this project:
 ### Server 
 backend technologies used in this project:
 
-*Node.js
-*Koa
-*MongoDB
+* Node.js
+* Koa
+* MongoDB
