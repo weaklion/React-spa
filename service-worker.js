@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/sia-fansite/precache-manifest.1e4356bb2478f67025deabd3bc712a1c.js"
+  "/React-spa-front/precache-manifest.c37fc50590c1e995256e1cc121a96b13.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/sia-fansite/index.html", {
+workbox.routing.registerNavigationRoute("/React-spa-front/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
